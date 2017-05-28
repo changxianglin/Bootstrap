@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+        <style media="screen">
+            .btn{
+                margin-right: 15px;
+                background-color: #fff;
+            }
+            #button-color{
+                border-color: orange;
+            }
+            .btn:hover{
+                background-color: orange;
+            }
+            .navlist{
+                border-radius: 0;
+            }
+            .navlist li{
+                margin-left: 20px;
+                margin-top: 20px;
+                display: inline-block;
+                list-style: none;
+            }
+            .navlist li a{
+                padding: 5px;
+                color: #fff;
+                text-decoration: none;
+            }
+            .navlist li a:hover{
+                border-bottom:1px solid #0ff;
+                padding-bottom:5px;
+            }
+            .navlist .logoimage {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contair">
+            <nav class="navbar navbar-inverse navlist">
+                <li class="logoimage"><img src="" alt="this is a image"></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <button id = "button-color" type="button" class="btn btn-default navbar-btn pull-right">Sign in</button>
+                <button type="button" class="btn btn-default navbar-btn pull-right">Sign in</button>
+            </nav>
+        </div>
+        <script src='https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'> </script>
+        <script src='./dist/js/bootstrap.min.js'> </script>
+    </body>
+</html>
