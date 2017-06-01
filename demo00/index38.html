@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>bootstrap demo00</title>
+        <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+            Loading state
+        </button>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+          Single toggle
+        </button>
+        <br>
+        <br>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+          </label>
+          <label class="btn btn-primary">
+            <input type="checkbox" autocomplete="off"> Checkbox 2
+          </label>
+          <label class="btn btn-primary">
+            <input type="checkbox" autocomplete="off"> Checkbox 3
+          </label>
+        </div>
+        <br><br>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+          </label>
+        </div>
+        <script>
+          $('#myButton').on('click', function () {
+            var $btn = $(this).button('loading')
+            // business logic...
+            $btn.button('reset')
+          })
+        </script>
+        <script src='https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js'>
+        </script>
+        <script src='./dist/js/bootstrap.min.js'> </script>
+    </body>
+</html>
